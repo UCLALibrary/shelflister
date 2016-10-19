@@ -2428,14 +2428,20 @@ sub ShowMIF {
     print qq(
         <div class="english">
 	Marked items are saved to a
-	file on the server.<br><br>
+	file on the server.<br>
+	<p>To download, right-click on the link below 
+	and select "Save Target (or Link) as...".
+	See tutorial to <a href="http://rocky.uta.edu/doran/shelflister/ShelfLister20markeditems.pdf">
+	import the file into MS Access.</a>
+	</p>
+
 	<table>
 	  <tr>
 	    <td class="right">
 		Filename:&nbsp;
 	    </td>
 	    <td>
-		$out_file
+		<a href="/$out_file">$out_file</a>
 	    </td>
 	  </tr>
 	  <tr>
